@@ -1,13 +1,13 @@
-using TMPro;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    // The variable that acts as the toggle. When true, the player can move.
+    public bool canMove = true;
+
     public float moveSpeed = 5f;
     private Rigidbody2D rb;
     private Vector2 moveInput;
-    [SerializeField] private SpriteRenderer spriteRenderer;
-    [SerializeField] private Animator animator;
 
     void Start()
     {
@@ -16,30 +16,29 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        // Check for player input to toggle movement on and off
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            canMove = !canMove; // This flips the boolean's value
+        }
+
+        // Get movement input from Unity's Input Manager
         moveInput.x = Input.GetAxisRaw("Horizontal");
         moveInput.y = Input.GetAxisRaw("Vertical");
-        moveInput.Normalize(); // Ensures diagonal movement isn't faster
+    }
 
-        if (moveInput.x != 0)
+    void FixedUpdate()
+    {
+        // Only run the movement code if 'canMove' is true
+        if (canMove)
         {
-            animator.SetBool("isWalking", true);
+            Vector2 movement = moveInput.normalized * moveSpeed * Time.fixedDeltaTime;
+            rb.MovePosition(rb.position + movement);
         }
         else
         {
-            animator.SetBool("isWalking", false);
-        }
-
-    }
-    void FixedUpdate()
-    {
-        rb.MovePosition(rb.position + moveInput * moveSpeed * Time.fixedDeltaTime);
-        if (moveInput.x < 0)
-        {
-            spriteRenderer.flipX = true;
-        }
-        else if (moveInput.x > 0)
-        {
-            spriteRenderer.flipX = false;
+            // If movement is disabled, set velocity to zero to stop the character
+            rb.linearVelocity = Vector2.zero;
         }
     }
 }
