@@ -385,7 +385,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 175512902}
-  - component: {fileID: 175512903}
   m_Layer: 0
   m_Name: Worker(Player)
   m_TagString: Untagged
@@ -409,19 +408,6 @@ Transform:
   - {fileID: 1069869595}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &175512903
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 175512901}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e40d4d26070516428723e1048118188, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 5
 --- !u!1 &679633256
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,7 +423,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &679633257
 Transform:
   m_ObjectHideFlags: 0
@@ -511,6 +497,7 @@ GameObject:
   - component: {fileID: 1031238963}
   - component: {fileID: 1031238962}
   - component: {fileID: 1031238961}
+  - component: {fileID: 1031238964}
   m_Layer: 0
   m_Name: HelperPlaceHolder
   m_TagString: Untagged
@@ -665,6 +652,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1031238964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031238959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e40d4d26070516428723e1048118188, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
 --- !u!1 &1069869594
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,6 +677,7 @@ GameObject:
   - component: {fileID: 1069869598}
   - component: {fileID: 1069869597}
   - component: {fileID: 1069869596}
+  - component: {fileID: 1069869599}
   m_Layer: 0
   m_Name: PlayerPlaceHolder
   m_TagString: Untagged
@@ -827,6 +828,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1069869599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1069869594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e40d4d26070516428723e1048118188, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
 --- !u!1 &1326212685
 GameObject:
   m_ObjectHideFlags: 0
