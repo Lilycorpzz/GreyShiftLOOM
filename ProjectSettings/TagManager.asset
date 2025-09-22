@@ -11,9 +11,9 @@ TagManager:
   - Background
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Enviroment
+  - Characters
+  - UI
   - 
   - 
   - 
@@ -43,6 +43,9 @@ TagManager:
     locked: 0
   - name: Background
     uniqueID: 1588752523
+    locked: 0
+  - name: 
+    uniqueID: 406818105
     locked: 0
   m_RenderingLayers:
   - Default
