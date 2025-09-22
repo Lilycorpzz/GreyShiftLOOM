@@ -125,20 +125,20 @@ TextureImporter:
       name: Julia_walk_Left_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 15
-        width: 26
-        height: 34
+        x: 18
+        y: 16
+        width: 24
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 848444aaf4cb96be0800000000000000
-      internalID: -1483447551896827832
+      spriteID: e70686a479df4a34aa6235ef63cfbb2e
+      internalID: 44556445
       vertices: []
       indices: 
       edges: []
@@ -147,20 +147,20 @@ TextureImporter:
       name: Julia_walk_Left_1
       rect:
         serializedVersion: 2
-        x: 81
-        y: 15
-        width: 26
-        height: 35
+        x: 82
+        y: 16
+        width: 24
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f0f617917b3e47250800000000000000
-      internalID: 5941624183953911567
+      spriteID: 8662ab10c40c54e41ace6e7ef5e05724
+      internalID: -1534818738
       vertices: []
       indices: 
       edges: []
@@ -169,20 +169,20 @@ TextureImporter:
       name: Julia_walk_Left_2
       rect:
         serializedVersion: 2
-        x: 145
-        y: 15
-        width: 26
-        height: 34
+        x: 146
+        y: 16
+        width: 24
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f43a1293858eb42f0800000000000000
-      internalID: -987440227664420017
+      spriteID: c9f4f5fd2f344804ab06fa1b990280da
+      internalID: 7799445
       vertices: []
       indices: 
       edges: []
@@ -191,20 +191,20 @@ TextureImporter:
       name: Julia_walk_Left_3
       rect:
         serializedVersion: 2
-        x: 209
-        y: 15
-        width: 26
-        height: 35
+        x: 210
+        y: 16
+        width: 24
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a20de8f16032b0030800000000000000
-      internalID: 3461899247770587178
+      spriteID: 8862ad438eaf29b40948d2e7c6d33644
+      internalID: 1864884284
       vertices: []
       indices: 
       edges: []
@@ -213,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7c39e1af6e10aa544b2a071b32564c99
     internalID: 0
     vertices: []
     indices: 
@@ -222,7 +222,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Julia_walk_Left_0: 44556445
+      Julia_walk_Left_1: -1534818738
+      Julia_walk_Left_2: 7799445
+      Julia_walk_Left_3: 1864884284
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
