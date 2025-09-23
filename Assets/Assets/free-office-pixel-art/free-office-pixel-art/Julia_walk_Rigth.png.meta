@@ -222,7 +222,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Julia_walk_Rigth_0: -1096624884607988187
+      Julia_walk_Rigth_1: 8656442558158426726
+      Julia_walk_Rigth_2: 4763224897461484568
+      Julia_walk_Rigth_3: 5519417192268155992
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

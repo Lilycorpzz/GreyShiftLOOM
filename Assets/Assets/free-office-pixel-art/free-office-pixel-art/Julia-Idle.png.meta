@@ -222,7 +222,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Julia-Idle_0: -4758077126507664235
+      Julia-Idle_1: 2914307372844188364
+      Julia-Idle_2: 9158614012863518642
+      Julia-Idle_3: -6425734313044786270
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

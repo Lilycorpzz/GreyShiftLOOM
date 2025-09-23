@@ -197,7 +197,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Julia_Drinking_Coffee_0: -883866629132079600
+      Julia_Drinking_Coffee_1: -8502364926021473729
+      Julia_Drinking_Coffee_2: 6310590927949666507
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
