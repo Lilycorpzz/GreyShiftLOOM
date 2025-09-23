@@ -4129,8 +4129,9 @@ GameObject:
   - component: {fileID: 705405339}
   - component: {fileID: 705405338}
   - component: {fileID: 705405337}
+  - component: {fileID: 705405340}
   m_Layer: 0
-  m_Name: Gemini_Generated_Image_c4pf41c4pf41c4pf-Photoroom_0
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4284,6 +4285,28 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!95 &705405340
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705405334}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c3b23ffa1d8f7254589b56d090f07f2f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &750218146
 GameObject:
   m_ObjectHideFlags: 0
@@ -4647,6 +4670,28 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &912659578
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912659573}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dda6c309735514e42b505d514bb88ff2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &991734980
 GameObject:
   m_ObjectHideFlags: 0
@@ -5577,6 +5622,7 @@ GameObject:
   - component: {fileID: 1508678634}
   - component: {fileID: 1508678637}
   - component: {fileID: 1508678636}
+  - component: {fileID: 1508678638}
   m_Layer: 0
   m_Name: image2_2
   m_TagString: Untagged
@@ -5718,6 +5764,28 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &1508678638
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508678633}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ba1f513a5db592545851630611a4cecc, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1550736126
 GameObject:
   m_ObjectHideFlags: 0
@@ -9236,6 +9304,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2616342892139595715, guid: dd7b1c7f58d758643bdd1566b065bc00, type: 3}
       insertIndex: -1
       addedObject: {fileID: 912659576}
+    - targetCorrespondingSourceObject: {fileID: 2616342892139595715, guid: dd7b1c7f58d758643bdd1566b065bc00, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 912659578}
   m_SourcePrefab: {fileID: 100100000, guid: dd7b1c7f58d758643bdd1566b065bc00, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
