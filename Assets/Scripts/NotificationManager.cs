@@ -1,10 +1,10 @@
 using UnityEngine;
-using UnityEngine.UI;
+using TMPro;
 using System.Collections;
 
 public class NotificationManager : MonoBehaviour
 {
-    public Text notificationText; // assign a UI Text (or TMP_Text) in inspector
+    public TextMeshProUGUI notificationText; // assign a UI Text (or TMP_Text) in inspector
     public float displayTime = 3f;
 
     private Coroutine showRoutine;
