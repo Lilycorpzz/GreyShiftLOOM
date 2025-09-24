@@ -8,41 +8,39 @@ public class SparkManager : MonoBehaviour
 
     [Header("Spark Settings")]
     public float maxSpark = 100f;
-    [Tooltip("Starting spark value.")]
     public float startingSpark = 100f;
     public float currentSpark;
 
-    // raised with normalized value (0..1)
+    // normalized value (0..1) subscribers use this to update overlays / UI
     public Action<float> OnSparkChanged;
+
+    // fired once when spark reaches zero
+    public Action OnSparkDepleted;
 
     private void Awake()
     {
         if (Instance != null && Instance != this) { Destroy(gameObject); return; }
         Instance = this;
-        currentSpark = Mathf.Clamp(startingSpark, 0, maxSpark);
+        currentSpark = Mathf.Clamp(startingSpark, 0f, maxSpark);
     }
 
     private void Start()
     {
-        // broadcast initial value
         OnSparkChanged?.Invoke(GetNormalizedSpark());
     }
 
-    /// <summary>
-    /// Change spark immediately (positive or negative). Clamps and notifies listeners.
-    /// </summary>
     public void ChangeSparkImmediate(float amount)
     {
+        // positive amount adds spark, negative amount subtracts
         currentSpark = Mathf.Clamp(currentSpark + amount, 0f, maxSpark);
         OnSparkChanged?.Invoke(GetNormalizedSpark());
+        if (Mathf.Approximately(currentSpark, 0f))
+            OnSparkDepleted?.Invoke();
     }
 
-    /// <summary>
-    /// Drain (or add) spark gradually over duration. Positive totalDrain reduces spark when totalDrain &gt; 0.
-    /// Call with StartCoroutine(SparkManager.Instance.DrainSparkOverTime(drainAmount, duration));
-    /// </summary>
     public IEnumerator DrainSparkOverTime(float totalAmount, float duration)
     {
+        // totalAmount expected positive (we subtract)
         if (duration <= 0f)
         {
             ChangeSparkImmediate(-totalAmount);
@@ -52,8 +50,27 @@ public class SparkManager : MonoBehaviour
         float elapsed = 0f;
         while (elapsed < duration)
         {
-            float delta = (totalAmount * Time.deltaTime) / duration;
-            ChangeSparkImmediate(-delta);
+            float step = (totalAmount * Time.deltaTime) / duration;
+            ChangeSparkImmediate(-step);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+    }
+
+    public IEnumerator RestoreSparkOverTime(float totalAmount, float duration)
+    {
+        // restore spark over duration
+        if (duration <= 0f)
+        {
+            ChangeSparkImmediate(totalAmount);
+            yield break;
+        }
+
+        float elapsed = 0f;
+        while (elapsed < duration)
+        {
+            float step = (totalAmount * Time.deltaTime) / duration;
+            ChangeSparkImmediate(step);
             elapsed += Time.deltaTime;
             yield return null;
         }
@@ -65,8 +82,7 @@ public class SparkManager : MonoBehaviour
         return Mathf.Clamp01(currentSpark / maxSpark);
     }
 
-    // debug helper
-    [ContextMenu("Fill Spark")]
+    [ContextMenu("FillSpark")]
     public void FillSpark() => ChangeSparkImmediate(maxSpark - currentSpark);
 
 }
