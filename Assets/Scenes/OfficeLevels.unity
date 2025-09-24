@@ -4409,6 +4409,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 661066347}
+  - component: {fileID: 661066348}
   m_Layer: 0
   m_Name: LoomSpawner
   m_TagString: Untagged
@@ -4431,6 +4432,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &661066348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 661066346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9ec85a0bbc25a04e86d1aa2d7c1f77a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoints:
+  - {fileID: 568455357}
+  - {fileID: 118536093}
+  zombiePrefab: {fileID: 7990795845405526251, guid: 7bccfa2dfd3db9046abdf3cef1dc2b31, type: 3}
+  maxZombies: 6
+  spawnInterval: 6
+  spawnPerWave: 1
 --- !u!1 &669864517
 GameObject:
   m_ObjectHideFlags: 0
