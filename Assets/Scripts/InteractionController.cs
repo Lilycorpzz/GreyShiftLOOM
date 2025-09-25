@@ -15,7 +15,6 @@ public class InteractionController : MonoBehaviour
 
     private void Update()
     {
-        // Left mouse button clicked (or touch began)
         if (Input.GetMouseButtonDown(0))
         {
             // Ignore clicks over UI
@@ -24,14 +23,23 @@ public class InteractionController : MonoBehaviour
 
             Vector2 worldPoint = mainCam.ScreenToWorldPoint(Input.mousePosition);
 
-            // OverlapPoint returns first collider under the point (2D)
             Collider2D col = Physics2D.OverlapPoint(worldPoint, interactableLayer);
             if (col != null)
             {
+                // Try Cubicle
                 CubicleInteractable ci = col.GetComponent<CubicleInteractable>();
                 if (ci != null)
                 {
                     ci.Interact();
+                    return;
+                }
+
+                // Try Creative
+                CreativeInteractable cri = col.GetComponent<CreativeInteractable>();
+                if (cri != null)
+                {
+                    cri.Interact();
+                    return;
                 }
             }
         }
