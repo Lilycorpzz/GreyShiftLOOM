@@ -169,6 +169,17 @@ public class ZombieWorkerAI : MonoBehaviour
         }
     }
 
+    public void Die()
+    {
+        // stop all coroutines and disable collider to avoid further interaction
+        StopAllCoroutines();
+        Collider2D col = GetComponent<Collider2D>();
+        if (col != null) col.enabled = false;
+
+        // optionally play death VFX or fade out
+        Destroy(gameObject);
+        OnDestroyed?.Invoke();
+    }
     private void PickNewWanderTarget()
     {
         Vector2 randomOffset = UnityEngine.Random.insideUnitCircle * wanderRadius;
