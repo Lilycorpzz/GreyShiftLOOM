@@ -11,7 +11,11 @@ public class NotificationManager : MonoBehaviour
 
     private void Awake()
     {
-        if (notificationText != null) notificationText.gameObject.SetActive(false);
+        if (notificationText != null)
+        {
+            // keep parent active, only toggle the text element
+            notificationText.gameObject.SetActive(false);
+        }
     }
 
     public void ShowNotification(string message)
