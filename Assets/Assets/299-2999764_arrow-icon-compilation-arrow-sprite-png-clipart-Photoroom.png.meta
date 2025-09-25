@@ -1,0 +1,380 @@
+fileFormatVersion: 2
+guid: f336826754bbc6c44bf23c690fd6ade1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8825629944189828757
+    second: 299-2999764_arrow-icon-compilation-arrow-sprite-png-clipart-Photoroom_0
+  - first:
+      213: 3976122299477213027
+    second: 299-2999764_arrow-icon-compilation-arrow-sprite-png-clipart-Photoroom_1
+  - first:
+      213: 5825901314402186540
+    second: 299-2999764_arrow-icon-compilation-arrow-sprite-png-clipart-Photoroom_2
+  - first:
+      213: 150115807237842974
+    second: 299-2999764_arrow-icon-compilation-arrow-sprite-png-clipart-Photoroom_3
+  - first:
+      213: -8904619535345196995
+    second: 299-2999764_arrow-icon-compilation-arrow-sprite-png-clipart-Photoroom_4
+  - first:
+      213: 2686611809203769868
+    second: 299-2999764_arrow-icon-compilation-arrow-sprite-png-clipart-Photoroom_5
+  - first:
+      213: 4494469640822745204
+    second: 299-2999764_arrow-icon-compilation-arrow-sprite-png-clipart-Photoroom_6
+  - first:
+      213: -4754318839836112471
+    second: 299-2999764_arrow-icon-compilation-arrow-sprite-png-clipart-Photoroom_7
+  - first:
+      213: 2617755693716877689
+    second: 299-2999764_arrow-icon-compilation-arrow-sprite-png-clipart-Photoroom_8
+  - first:
+      213: 1586403033144368493
+    second: 299-2999764_arrow-icon-compilation-arrow-sprite-png-clipart-Photoroom_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 299-2999764_arrow-icon-compilation-arrow-sprite-png-clipart-Photoroom_0
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 415
+        width: 121
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59e3c7e8cafea7a70800000000000000
+      internalID: 8825629944189828757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 299-2999764_arrow-icon-compilation-arrow-sprite-png-clipart-Photoroom_1
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 419
+        width: 130
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36f39db3a260e2730800000000000000
+      internalID: 3976122299477213027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 299-2999764_arrow-icon-compilation-arrow-sprite-png-clipart-Photoroom_2
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 415
+        width: 122
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c257c65e062c9d050800000000000000
+      internalID: 5825901314402186540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 299-2999764_arrow-icon-compilation-arrow-sprite-png-clipart-Photoroom_3
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 232
+        width: 130
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1825950881551200800000000000000
+      internalID: 150115807237842974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 299-2999764_arrow-icon-compilation-arrow-sprite-png-clipart-Photoroom_4
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 230
+        width: 129
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d30eeb716bf6c6480800000000000000
+      internalID: -8904619535345196995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 299-2999764_arrow-icon-compilation-arrow-sprite-png-clipart-Photoroom_5
+      rect:
+        serializedVersion: 2
+        x: 559
+        y: 227
+        width: 125
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c02d5f8c433c84520800000000000000
+      internalID: 2686611809203769868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 299-2999764_arrow-icon-compilation-arrow-sprite-png-clipart-Photoroom_6
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 71
+        width: 44
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 478640b53509f5e30800000000000000
+      internalID: 4494469640822745204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 299-2999764_arrow-icon-compilation-arrow-sprite-png-clipart-Photoroom_7
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 39
+        width: 87
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a90f926434450eb0800000000000000
+      internalID: -4754318839836112471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 299-2999764_arrow-icon-compilation-arrow-sprite-png-clipart-Photoroom_8
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 42
+        width: 130
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97130c81fe2245420800000000000000
+      internalID: 2617755693716877689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 299-2999764_arrow-icon-compilation-arrow-sprite-png-clipart-Photoroom_9
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 39
+        width: 126
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6d1c2d4729040610800000000000000
+      internalID: 1586403033144368493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
