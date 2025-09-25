@@ -5,7 +5,7 @@ using System.Collections;
 public class CreativeInteractable : MonoBehaviour
 {
     [Header("Creative Task Settings")]
-    public float sparkRestoreAmount = 20f;  // total spark to restore
+    public float sparkRestoreAmount = 50f;  // total spark to restore
     public float taskDuration = 2.0f;       // seconds
     public float cooldown = 1.0f;
 

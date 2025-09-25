@@ -26,7 +26,7 @@ public class ThrowableObject : MonoBehaviour
     {
         if (rb == null) return;
         Vector2 dir = (target - (Vector2)transform.position).normalized;
-        rb.velocity = Vector2.zero;
+        rb.linearVelocity = Vector2.zero;
         rb.AddForce(dir * force, ForceMode2D.Impulse);
         thrown = true;
         // Destroy after time to clean up
