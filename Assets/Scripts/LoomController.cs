@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System;
 
 public class LoomController : MonoBehaviour
 {
@@ -23,6 +24,10 @@ public class LoomController : MonoBehaviour
     [Header("References")]
     public SpriteRenderer sr;               // assign or cached automatically
 
+    // --- Events ---
+    public Action<float> OnHealthChanged;   // sends normalized health 0..1
+    public Action OnLoomDestroyed;          // fired when loom dies
+
     // internal
     private float lastNormalizedSpark = -1f;
     private Coroutine wiggleRoutine;
@@ -42,6 +47,9 @@ public class LoomController : MonoBehaviour
             lastNormalizedSpark = SparkManager.Instance.GetNormalizedSpark();
             SparkManager.Instance.OnSparkChanged += OnSparkChanged;
         }
+
+        // broadcast initial health
+        OnHealthChanged?.Invoke(GetNormalizedHealth());
     }
 
     private void OnDestroy()
@@ -66,14 +74,18 @@ public class LoomController : MonoBehaviour
     private void ApplyDamage(float amount)
     {
         if (isFizzlingOut) return;
+
         currentHealth = Mathf.Clamp(currentHealth - amount, 0f, maxHealth);
-        // Optionally update UI for Loom health here
+
+        // notify listeners (UI, etc.)
+        OnHealthChanged?.Invoke(GetNormalizedHealth());
+
         CheckHealthState();
     }
 
     private void CheckHealthState()
     {
-        float normalized = currentHealth / maxHealth;
+        float normalized = GetNormalizedHealth();
         if (normalized <= 0f)
         {
             StartCoroutine(FizzleOutAndDie());
@@ -90,7 +102,7 @@ public class LoomController : MonoBehaviour
     {
         // Wiggle (look left-right) in bursts while below threshold
         float elapsed = 0f;
-        while (currentHealth / maxHealth <= searchThresholdNormalized && !isFizzlingOut)
+        while (GetNormalizedHealth() <= searchThresholdNormalized && !isFizzlingOut)
         {
             elapsed = 0f;
             while (elapsed < wiggleDuration)
@@ -132,6 +144,9 @@ public class LoomController : MonoBehaviour
             yield return null;
         }
 
+        // fire event
+        OnLoomDestroyed?.Invoke();
+
         // final destroy (or disable)
         Destroy(gameObject);
         yield break;
@@ -141,5 +156,11 @@ public class LoomController : MonoBehaviour
     public void TakeDirectDamage(float amount)
     {
         ApplyDamage(amount);
+    }
+
+    public float GetNormalizedHealth()
+    {
+        if (maxHealth <= 0f) return 0f;
+        return Mathf.Clamp01(currentHealth / maxHealth);
     }
 }
